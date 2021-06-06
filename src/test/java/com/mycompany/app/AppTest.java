@@ -2,6 +2,7 @@ package com.mycompany.app;
 
 import static org.junit.Assert.assertTrue;
 
+import com.epam.tat.module4.Calculator;
 import org.junit.Test;
 
 /**
@@ -16,5 +17,6 @@ public class AppTest
     public void shouldAnswerWithTrue()
     {
         assertTrue( true );
+        Calculator calculator = new Calculator();
     }
 }
