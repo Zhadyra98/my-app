@@ -14,11 +14,27 @@
         </classes>
     </test>
     <test name="SumTestDouble">
-        <parameter name="a" value="1"/>
-        <parameter name="b" value="1"/>
+        <parameter name="a" value="1.0"/>
+        <parameter name="b" value="4.1"/>
+        <parameter name="expected" value="5.1"/>
+        <classes>
+            <class name="com.mycompany.app.testng.SumTestDouble"></class>
+        </classes>
+    </test>
+    <test name="SubTestLong">
+        <parameter name="a" value="6"/>
+        <parameter name="b" value="4"/>
         <parameter name="expected" value="2"/>
         <classes>
-            <class name="com.mycompany.app.testng.SumTestLong"></class>
+            <class name="com.mycompany.app.testng.SubTestLong"></class>
+        </classes>
+    </test>
+    <test name="SubTestDouble">
+        <parameter name="a" value="7.0"/>
+        <parameter name="b" value="4.0"/>
+        <parameter name="expected" value="3.0"/>
+        <classes>
+            <class name="com.mycompany.app.testng.SubTestDouble"></class>
         </classes>
     </test>
 
