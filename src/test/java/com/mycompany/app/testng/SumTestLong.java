@@ -6,7 +6,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class SumTestLong extends BaseCalculatorTest {
-    @Test(description = "Check long sum method")
+    @Test()
     @Parameters({"a", "b", "expected"})
     public void testLongSum(long a, long b, long expected) {
         long sum = calculator.sum(a, b);

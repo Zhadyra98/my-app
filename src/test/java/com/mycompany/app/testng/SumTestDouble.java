@@ -10,6 +10,6 @@ public class SumTestDouble extends BaseCalculatorTest {
     @Parameters({"a", "b", "expected"})
     public void testLongSum(double a, double b, double expected) {
         double sum = calculator.sum(a, b);
-        Assert.assertEquals(sum, expected, "Method 'testLongSum' returned not expected value: ");
+        Assert.assertEquals(sum, expected);
     }
 }
