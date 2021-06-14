@@ -1,11 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Calculator" verbose="1" parallel="false">
-    <test name="Calculator">
-
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Calculator" verbose="1" parallel="methods" thread-count="5">
+    <groups>
+        <run>
+            <exclude name="main"></exclude>
+        </run>
+    </groups>
+    <test name="SumTestLong">
+        <parameter name="a" value="1"/>
+        <parameter name="b" value="1"/>
+        <parameter name="expected" value="2"/>
         <classes>
-            <class name="com.mycompany.app.runner.CalculatorTest"></class>
+            <class name="com.mycompany.app.testng.SumTestLong"></class>
         </classes>
     </test>
-</suite>
+    <test name="SumTestDouble">
+        <parameter name="a" value="1"/>
+        <parameter name="b" value="1"/>
+        <parameter name="expected" value="2"/>
+        <classes>
+            <class name="com.mycompany.app.testng.SumTestLong"></class>
+        </classes>
+    </test>
 
+
+
+</suite>
