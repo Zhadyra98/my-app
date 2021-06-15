@@ -1,5 +1,6 @@
 package com.mycompany.app.junit;
 
+import com.mycompany.app.BaseCalculatorTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -12,7 +13,6 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class MulTestDouble extends BaseCalculatorTest {
-
 
     @Parameters
     public static Collection<Object[]> data() {

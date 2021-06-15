@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"></parameter>
+    <parameter name="a" value="0.0"></parameter>
+    <parameter name="b" value="0.0"></parameter>
+    <parameter name="expected" value="0.0"></parameter>
+    <test name="testByDoubleNumberGroup">
+        <groups>
+            <run>
+                <include name="doubleNumber"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.mycompany.app.testng.SumTestDouble"></class>
+            <class name="com.mycompany.app.testng.MulTestDouble"></class>
+            <class name="com.mycompany.app.testng.SubTestDouble"></class>
+            <class name="com.mycompany.app.testng.DivTestDouble"></class>
+        </classes>
+    </test>
+    <test name="Summation Test">
+        <parameter name="a" value="10"></parameter>
+        <parameter name="b" value="14"></parameter>
+        <parameter name="expected" value="24"></parameter>
+        <classes>
+            <class name="com.mycompany.app.testng.SumTestLong"></class>
+        </classes>
+    </test>
+    <test name="Division Test">
+        <parameter name="a" value="10"></parameter>
+        <parameter name="b" value="2"></parameter>
+        <parameter name="expected" value="5"></parameter>
+        <classes>
+            <class name="com.mycompany.app.testng.DivTestLong"></class>
+        </classes>
+    </test>
+    <test name="Power Calculator Test">
+        <parameter name="a" value="5"></parameter>
+        <parameter name="b" value="2"></parameter>
+        <parameter name="expected" value="25"></parameter>
+        <classes>
+            <class name="com.mycompany.app.testng.PowTest"></class>
+        </classes>
+    </test>
+</suite>
