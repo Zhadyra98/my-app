@@ -1,6 +1,6 @@
 package com.mycompany.app.testng;
 
-import com.mycompany.app.BaseCalculatorTest;
+import com.mycompany.app.testng.BaseCalculatorTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 

@@ -1,6 +1,5 @@
 package com.mycompany.app.junit;
 
-import com.mycompany.app.BaseCalculatorTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -13,8 +12,6 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class DivTestDouble extends BaseCalculatorTest {
-
-
     @Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
@@ -23,7 +20,6 @@ public class DivTestDouble extends BaseCalculatorTest {
                 {3, 3, 1}
         });
     }
-
     private double a ;
     private double b;
     private double expected;
@@ -33,7 +29,7 @@ public class DivTestDouble extends BaseCalculatorTest {
         this.expected=expected;
     }
     @Test
-    public void testLongDiv()  {
+    public void testDoubleDiv()  {
         double div = calculator.div(a, b);
         assertEquals(div,expected,DELTA);
     }

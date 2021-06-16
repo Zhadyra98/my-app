@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <parameter name="browser" value="chrome"></parameter>
-    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"></parameter>
-    <parameter name="a" value="0.0"></parameter>
-    <parameter name="b" value="0.0"></parameter>
-    <parameter name="expected" value="0.0"></parameter>
     <test name="testByDoubleNumberGroup">
+        <parameter name="a" value="0.0"></parameter>
+        <parameter name="b" value="0.0"></parameter>
+        <parameter name="expected" value="0.0"></parameter>
         <groups>
             <run>
                 <include name="doubleNumber"></include>
@@ -41,6 +39,14 @@
         <parameter name="expected" value="25"></parameter>
         <classes>
             <class name="com.mycompany.app.testng.PowTest"></class>
+        </classes>
+    </test>
+    <test name="Divide double number Test">
+        <parameter name="a" value="5.0"></parameter>
+        <parameter name="b" value="1.0"></parameter>
+        <parameter name="expected" value="5.0"></parameter>
+        <classes>
+            <class name="com.mycompany.app.testng.DivTestDouble"></class>
         </classes>
     </test>
 </suite>
