@@ -1,7 +1,5 @@
-package com.mycompany.app.practice;
+package com.mycompany.app.for_just_practice;
 
-import com.sun.tracing.dtrace.DependencyClass;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class DependencyExample {

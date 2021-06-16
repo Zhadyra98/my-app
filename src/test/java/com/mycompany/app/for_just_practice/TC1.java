@@ -1,6 +1,5 @@
-package com.mycompany.app.practice;
+package com.mycompany.app.for_just_practice;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 import org.testng.annotations.*;
 
 public class TC1 {

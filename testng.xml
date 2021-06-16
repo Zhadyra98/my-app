@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite"  parallel="methods" thread-count="5">
     <test name="testByDoubleNumberGroup">
         <parameter name="a" value="0.0"></parameter>
         <parameter name="b" value="0.0"></parameter>
@@ -49,4 +49,5 @@
             <class name="com.mycompany.app.testng.DivTestDouble"></class>
         </classes>
     </test>
+
 </suite>

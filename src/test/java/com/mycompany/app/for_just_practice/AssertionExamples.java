@@ -1,4 +1,4 @@
-package com.mycompany.app.practice;
+package com.mycompany.app.for_just_practice;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
